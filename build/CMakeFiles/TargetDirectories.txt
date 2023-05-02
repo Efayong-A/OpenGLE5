@@ -1,0 +1,11 @@
+/home/semag/Desktop/GLImac-Template/build/CMakeFiles/edit_cache.dir
+/home/semag/Desktop/GLImac-Template/build/CMakeFiles/rebuild_cache.dir
+/home/semag/Desktop/GLImac-Template/build/glimac/CMakeFiles/glimac.dir
+/home/semag/Desktop/GLImac-Template/build/glimac/CMakeFiles/edit_cache.dir
+/home/semag/Desktop/GLImac-Template/build/glimac/CMakeFiles/rebuild_cache.dir
+/home/semag/Desktop/GLImac-Template/build/TP_garbage/CMakeFiles/TP_garbage_foo.dir
+/home/semag/Desktop/GLImac-Template/build/TP_garbage/CMakeFiles/edit_cache.dir
+/home/semag/Desktop/GLImac-Template/build/TP_garbage/CMakeFiles/rebuild_cache.dir
+/home/semag/Desktop/GLImac-Template/build/TP_template/CMakeFiles/TP_template_SDLtemplate.dir
+/home/semag/Desktop/GLImac-Template/build/TP_template/CMakeFiles/edit_cache.dir
+/home/semag/Desktop/GLImac-Template/build/TP_template/CMakeFiles/rebuild_cache.dir
