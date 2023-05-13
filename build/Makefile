@@ -130,6 +130,58 @@ glimac/fast:
 .PHONY : glimac/fast
 
 #=============================================================================
+# Target rules for targets named TP1_exo1_triangle_blanc
+
+# Build rule for target.
+TP1_exo1_triangle_blanc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP1_exo1_triangle_blanc
+.PHONY : TP1_exo1_triangle_blanc
+
+# fast build rule for target.
+TP1_exo1_triangle_blanc/fast:
+	$(MAKE) $(MAKESILENT) -f TP1/CMakeFiles/TP1_exo1_triangle_blanc.dir/build.make TP1/CMakeFiles/TP1_exo1_triangle_blanc.dir/build
+.PHONY : TP1_exo1_triangle_blanc/fast
+
+#=============================================================================
+# Target rules for targets named TP1_exo2_triangle_couleurs
+
+# Build rule for target.
+TP1_exo2_triangle_couleurs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP1_exo2_triangle_couleurs
+.PHONY : TP1_exo2_triangle_couleurs
+
+# fast build rule for target.
+TP1_exo2_triangle_couleurs/fast:
+	$(MAKE) $(MAKESILENT) -f TP1/CMakeFiles/TP1_exo2_triangle_couleurs.dir/build.make TP1/CMakeFiles/TP1_exo2_triangle_couleurs.dir/build
+.PHONY : TP1_exo2_triangle_couleurs/fast
+
+#=============================================================================
+# Target rules for targets named TP1_exo3_triangle_couleurs
+
+# Build rule for target.
+TP1_exo3_triangle_couleurs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP1_exo3_triangle_couleurs
+.PHONY : TP1_exo3_triangle_couleurs
+
+# fast build rule for target.
+TP1_exo3_triangle_couleurs/fast:
+	$(MAKE) $(MAKESILENT) -f TP1/CMakeFiles/TP1_exo3_triangle_couleurs.dir/build.make TP1/CMakeFiles/TP1_exo3_triangle_couleurs.dir/build
+.PHONY : TP1_exo3_triangle_couleurs/fast
+
+#=============================================================================
+# Target rules for targets named TP2_exo1
+
+# Build rule for target.
+TP2_exo1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2_exo1
+.PHONY : TP2_exo1
+
+# fast build rule for target.
+TP2_exo1/fast:
+	$(MAKE) $(MAKESILENT) -f TP2/CMakeFiles/TP2_exo1.dir/build.make TP2/CMakeFiles/TP2_exo1.dir/build
+.PHONY : TP2_exo1/fast
+
+#=============================================================================
 # Target rules for targets named TP_garbage_foo
 
 # Build rule for target.
@@ -163,6 +215,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... TP1_exo1_triangle_blanc"
+	@echo "... TP1_exo2_triangle_couleurs"
+	@echo "... TP1_exo3_triangle_couleurs"
+	@echo "... TP2_exo1"
 	@echo "... TP_garbage_foo"
 	@echo "... TP_template_SDLtemplate"
 	@echo "... glimac"
