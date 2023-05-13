@@ -182,6 +182,19 @@ TP2_exo1/fast:
 .PHONY : TP2_exo1/fast
 
 #=============================================================================
+# Target rules for targets named TP2.5_SDLtemplate
+
+# Build rule for target.
+TP2.5_SDLtemplate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5_SDLtemplate
+.PHONY : TP2.5_SDLtemplate
+
+# fast build rule for target.
+TP2.5_SDLtemplate/fast:
+	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build
+.PHONY : TP2.5_SDLtemplate/fast
+
+#=============================================================================
 # Target rules for targets named TP_garbage_foo
 
 # Build rule for target.
@@ -218,6 +231,7 @@ help:
 	@echo "... TP1_exo1_triangle_blanc"
 	@echo "... TP1_exo2_triangle_couleurs"
 	@echo "... TP1_exo3_triangle_couleurs"
+	@echo "... TP2.5_SDLtemplate"
 	@echo "... TP2_exo1"
 	@echo "... TP_garbage_foo"
 	@echo "... TP_template_SDLtemplate"

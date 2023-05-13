@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/semag/Desktop/GLImac-Template/build
 all: glimac/all
 all: TP1/all
 all: TP2/all
+all: TP2.5/all
 all: TP_garbage/all
 all: TP_template/all
 .PHONY : all
@@ -74,6 +75,7 @@ all: TP_template/all
 preinstall: glimac/preinstall
 preinstall: TP1/preinstall
 preinstall: TP2/preinstall
+preinstall: TP2.5/preinstall
 preinstall: TP_garbage/preinstall
 preinstall: TP_template/preinstall
 .PHONY : preinstall
@@ -82,6 +84,7 @@ preinstall: TP_template/preinstall
 clean: glimac/clean
 clean: TP1/clean
 clean: TP2/clean
+clean: TP2.5/clean
 clean: TP_garbage/clean
 clean: TP_template/clean
 .PHONY : clean
@@ -119,6 +122,21 @@ TP2/preinstall:
 # Recursive "clean" directory target.
 TP2/clean: TP2/CMakeFiles/TP2_exo1.dir/clean
 .PHONY : TP2/clean
+
+#=============================================================================
+# Directory level rules for directory TP2.5
+
+# Recursive "all" directory target.
+TP2.5/all: TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/all
+.PHONY : TP2.5/all
+
+# Recursive "preinstall" directory target.
+TP2.5/preinstall:
+.PHONY : TP2.5/preinstall
+
+# Recursive "clean" directory target.
+TP2.5/clean: TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/clean
+.PHONY : TP2.5/clean
 
 #=============================================================================
 # Directory level rules for directory TP_garbage
@@ -172,7 +190,7 @@ glimac/clean: glimac/CMakeFiles/glimac.dir/clean
 glimac/CMakeFiles/glimac.dir/all:
 	$(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/depend
 	$(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21 "Built target glimac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23 "Built target glimac"
 .PHONY : glimac/CMakeFiles/glimac.dir/all
 
 # Build rule for subdir invocation for target.
@@ -276,7 +294,7 @@ TP1/CMakeFiles/TP1_exo3_triangle_couleurs.dir/clean:
 TP2/CMakeFiles/TP2_exo1.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP2/CMakeFiles/TP2_exo1.dir/build.make TP2/CMakeFiles/TP2_exo1.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP2/CMakeFiles/TP2_exo1.dir/build.make TP2/CMakeFiles/TP2_exo1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=7,8 "Built target TP2_exo1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=9,10 "Built target TP2_exo1"
 .PHONY : TP2/CMakeFiles/TP2_exo1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,13 +314,39 @@ TP2/CMakeFiles/TP2_exo1.dir/clean:
 .PHONY : TP2/CMakeFiles/TP2_exo1.dir/clean
 
 #=============================================================================
+# Target rules for target TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir
+
+# All Build rule for target.
+TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/depend
+	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=7,8 "Built target TP2.5_SDLtemplate"
+.PHONY : TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/all
+
+# Build rule for subdir invocation for target.
+TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semag/Desktop/GLImac-Template/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semag/Desktop/GLImac-Template/build/CMakeFiles 0
+.PHONY : TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule
+
+# Convenience name for target.
+TP2.5_SDLtemplate: TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule
+.PHONY : TP2.5_SDLtemplate
+
+# clean rule for target.
+TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/clean
+.PHONY : TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/clean
+
+#=============================================================================
 # Target rules for target TP_garbage/CMakeFiles/TP_garbage_foo.dir
 
 # All Build rule for target.
 TP_garbage/CMakeFiles/TP_garbage_foo.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=9,10 "Built target TP_garbage_foo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=11,12 "Built target TP_garbage_foo"
 .PHONY : TP_garbage/CMakeFiles/TP_garbage_foo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -328,7 +372,7 @@ TP_garbage/CMakeFiles/TP_garbage_foo.dir/clean:
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=11,12 "Built target TP_template_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=13,14 "Built target TP_template_SDLtemplate"
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.
