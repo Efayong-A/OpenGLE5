@@ -130,6 +130,30 @@ glimac/fast:
 	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
 .PHONY : glimac/fast
 
+include/SDLWindowManager.o: include/SDLWindowManager.cpp.o
+.PHONY : include/SDLWindowManager.o
+
+# target to build an object file
+include/SDLWindowManager.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.o
+.PHONY : include/SDLWindowManager.cpp.o
+
+include/SDLWindowManager.i: include/SDLWindowManager.cpp.i
+.PHONY : include/SDLWindowManager.i
+
+# target to preprocess a source file
+include/SDLWindowManager.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.i
+.PHONY : include/SDLWindowManager.cpp.i
+
+include/SDLWindowManager.s: include/SDLWindowManager.cpp.s
+.PHONY : include/SDLWindowManager.s
+
+# target to generate assembly for a file
+include/SDLWindowManager.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.s
+.PHONY : include/SDLWindowManager.cpp.s
+
 src/Cone.o: src/Cone.cpp.o
 .PHONY : src/Cone.o
 
@@ -331,6 +355,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... glimac"
+	@echo "... include/SDLWindowManager.o"
+	@echo "... include/SDLWindowManager.i"
+	@echo "... include/SDLWindowManager.s"
 	@echo "... src/Cone.o"
 	@echo "... src/Cone.i"
 	@echo "... src/Cone.s"

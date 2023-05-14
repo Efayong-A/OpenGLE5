@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/semag/Desktop/GLImac-Template/glimac/include/SDLWindowManager.cpp" "glimac/CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Cone.cpp" "glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Cone.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Geometry.cpp" "glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Image.cpp" "glimac/CMakeFiles/glimac.dir/src/Image.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Image.cpp.o.d"

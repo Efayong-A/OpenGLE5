@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.o"
+  "CMakeFiles/glimac.dir/include/SDLWindowManager.cpp.o.d"
   "CMakeFiles/glimac.dir/src/Cone.cpp.o"
   "CMakeFiles/glimac.dir/src/Cone.cpp.o.d"
   "CMakeFiles/glimac.dir/src/Geometry.cpp.o"

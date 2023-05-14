@@ -34,6 +34,15 @@ int main(int argc, char** argv) {
                                   applicationPath.dirPath() + "/shaders/" + fragmentShaderPath);
     program.use();
 
+    // Get the location of the uniform variable uTime
+    GLint uTimeLocation = glGetUniformLocation(program.getGLId(), "uTime");
+
+    // Check if the location is valid
+    if (uTimeLocation == -1) {
+        std::cerr << "Failed to get the location of uTime uniform variable" << std::endl;
+        return EXIT_FAILURE;
+    }
+
     std::cout << "OpenGL Version : " << glGetString(GL_VERSION) << std::endl;
     std::cout << "GLEW Version : " << glewGetString(GLEW_VERSION) << std::endl;
 
@@ -70,8 +79,13 @@ int main(int argc, char** argv) {
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 
+    // Set the initial value of uTime to 45
+    glUniform1f(uTimeLocation, 45.0f);
+
     // Application loop:
     bool done = false;
+    float time = 0.0f; // Initial value of time
+
     while (!done) {
         // Event loop:
         SDL_Event e;
@@ -84,6 +98,10 @@ int main(int argc, char** argv) {
         /*********************************
          * HERE SHOULD COME THE RENDERING CODE
          *********************************/
+        time += 1;
+        glUniform1f(uTimeLocation, time);
+
+
         glClear(GL_COLOR_BUFFER_BIT);
         glBindVertexArray(vao);
         glDrawArrays(GL_TRIANGLES, 0, 3);

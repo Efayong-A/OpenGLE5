@@ -117,42 +117,194 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule:
-	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule
-.PHONY : TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule
+TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/rule:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/rule
+.PHONY : TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/rule
 
 # Convenience name for target.
-TP2.5_SDLtemplate: TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/rule
-.PHONY : TP2.5_SDLtemplate
+TP2.5_TriangleAvecTexturesWow: TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/rule
+.PHONY : TP2.5_TriangleAvecTexturesWow
 
 # fast build rule for target.
-TP2.5_SDLtemplate/fast:
-	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build
-.PHONY : TP2.5_SDLtemplate/fast
+TP2.5_TriangleAvecTexturesWow/fast:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build
+.PHONY : TP2.5_TriangleAvecTexturesWow/fast
 
-SDLtemplate.o: SDLtemplate.cpp.o
-.PHONY : SDLtemplate.o
+# Convenience name for target.
+TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/rule:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/rule
+.PHONY : TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/rule
+
+# Convenience name for target.
+TP2.5_TriangleQuiMatrix: TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/rule
+.PHONY : TP2.5_TriangleQuiMatrix
+
+# fast build rule for target.
+TP2.5_TriangleQuiMatrix/fast:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build
+.PHONY : TP2.5_TriangleQuiMatrix/fast
+
+# Convenience name for target.
+TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/rule:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/rule
+.PHONY : TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/rule
+
+# Convenience name for target.
+TP2.5_TriangleQuiPlusieursTriangles: TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/rule
+.PHONY : TP2.5_TriangleQuiPlusieursTriangles
+
+# fast build rule for target.
+TP2.5_TriangleQuiPlusieursTriangles/fast:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build
+.PHONY : TP2.5_TriangleQuiPlusieursTriangles/fast
+
+# Convenience name for target.
+TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/rule:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/rule
+.PHONY : TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/rule
+
+# Convenience name for target.
+TP2.5_TriangleQuiTourne: TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/rule
+.PHONY : TP2.5_TriangleQuiTourne
+
+# fast build rule for target.
+TP2.5_TriangleQuiTourne/fast:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build
+.PHONY : TP2.5_TriangleQuiTourne/fast
+
+# Convenience name for target.
+TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/rule:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/rule
+.PHONY : TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/rule
+
+# Convenience name for target.
+TP2.5_TriangleRouge: TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/rule
+.PHONY : TP2.5_TriangleRouge
+
+# fast build rule for target.
+TP2.5_TriangleRouge/fast:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build
+.PHONY : TP2.5_TriangleRouge/fast
+
+TriangleAvecTexturesWow.o: TriangleAvecTexturesWow.cpp.o
+.PHONY : TriangleAvecTexturesWow.o
 
 # target to build an object file
-SDLtemplate.cpp.o:
-	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/SDLtemplate.cpp.o
-.PHONY : SDLtemplate.cpp.o
+TriangleAvecTexturesWow.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/TriangleAvecTexturesWow.cpp.o
+.PHONY : TriangleAvecTexturesWow.cpp.o
 
-SDLtemplate.i: SDLtemplate.cpp.i
-.PHONY : SDLtemplate.i
+TriangleAvecTexturesWow.i: TriangleAvecTexturesWow.cpp.i
+.PHONY : TriangleAvecTexturesWow.i
 
 # target to preprocess a source file
-SDLtemplate.cpp.i:
-	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/SDLtemplate.cpp.i
-.PHONY : SDLtemplate.cpp.i
+TriangleAvecTexturesWow.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/TriangleAvecTexturesWow.cpp.i
+.PHONY : TriangleAvecTexturesWow.cpp.i
 
-SDLtemplate.s: SDLtemplate.cpp.s
-.PHONY : SDLtemplate.s
+TriangleAvecTexturesWow.s: TriangleAvecTexturesWow.cpp.s
+.PHONY : TriangleAvecTexturesWow.s
 
 # target to generate assembly for a file
-SDLtemplate.cpp.s:
-	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/build.make TP2.5/CMakeFiles/TP2.5_SDLtemplate.dir/SDLtemplate.cpp.s
-.PHONY : SDLtemplate.cpp.s
+TriangleAvecTexturesWow.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/TriangleAvecTexturesWow.cpp.s
+.PHONY : TriangleAvecTexturesWow.cpp.s
+
+TriangleQuiMatrix.o: TriangleQuiMatrix.cpp.o
+.PHONY : TriangleQuiMatrix.o
+
+# target to build an object file
+TriangleQuiMatrix.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/TriangleQuiMatrix.cpp.o
+.PHONY : TriangleQuiMatrix.cpp.o
+
+TriangleQuiMatrix.i: TriangleQuiMatrix.cpp.i
+.PHONY : TriangleQuiMatrix.i
+
+# target to preprocess a source file
+TriangleQuiMatrix.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/TriangleQuiMatrix.cpp.i
+.PHONY : TriangleQuiMatrix.cpp.i
+
+TriangleQuiMatrix.s: TriangleQuiMatrix.cpp.s
+.PHONY : TriangleQuiMatrix.s
+
+# target to generate assembly for a file
+TriangleQuiMatrix.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/TriangleQuiMatrix.cpp.s
+.PHONY : TriangleQuiMatrix.cpp.s
+
+TriangleQuiPlusieursTriangles.o: TriangleQuiPlusieursTriangles.cpp.o
+.PHONY : TriangleQuiPlusieursTriangles.o
+
+# target to build an object file
+TriangleQuiPlusieursTriangles.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/TriangleQuiPlusieursTriangles.cpp.o
+.PHONY : TriangleQuiPlusieursTriangles.cpp.o
+
+TriangleQuiPlusieursTriangles.i: TriangleQuiPlusieursTriangles.cpp.i
+.PHONY : TriangleQuiPlusieursTriangles.i
+
+# target to preprocess a source file
+TriangleQuiPlusieursTriangles.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/TriangleQuiPlusieursTriangles.cpp.i
+.PHONY : TriangleQuiPlusieursTriangles.cpp.i
+
+TriangleQuiPlusieursTriangles.s: TriangleQuiPlusieursTriangles.cpp.s
+.PHONY : TriangleQuiPlusieursTriangles.s
+
+# target to generate assembly for a file
+TriangleQuiPlusieursTriangles.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/TriangleQuiPlusieursTriangles.cpp.s
+.PHONY : TriangleQuiPlusieursTriangles.cpp.s
+
+TriangleQuiTourne.o: TriangleQuiTourne.cpp.o
+.PHONY : TriangleQuiTourne.o
+
+# target to build an object file
+TriangleQuiTourne.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/TriangleQuiTourne.cpp.o
+.PHONY : TriangleQuiTourne.cpp.o
+
+TriangleQuiTourne.i: TriangleQuiTourne.cpp.i
+.PHONY : TriangleQuiTourne.i
+
+# target to preprocess a source file
+TriangleQuiTourne.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/TriangleQuiTourne.cpp.i
+.PHONY : TriangleQuiTourne.cpp.i
+
+TriangleQuiTourne.s: TriangleQuiTourne.cpp.s
+.PHONY : TriangleQuiTourne.s
+
+# target to generate assembly for a file
+TriangleQuiTourne.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/TriangleQuiTourne.cpp.s
+.PHONY : TriangleQuiTourne.cpp.s
+
+TriangleRouge.o: TriangleRouge.cpp.o
+.PHONY : TriangleRouge.o
+
+# target to build an object file
+TriangleRouge.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/TriangleRouge.cpp.o
+.PHONY : TriangleRouge.cpp.o
+
+TriangleRouge.i: TriangleRouge.cpp.i
+.PHONY : TriangleRouge.i
+
+# target to preprocess a source file
+TriangleRouge.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/TriangleRouge.cpp.i
+.PHONY : TriangleRouge.cpp.i
+
+TriangleRouge.s: TriangleRouge.cpp.s
+.PHONY : TriangleRouge.s
+
+# target to generate assembly for a file
+TriangleRouge.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/TriangleRouge.cpp.s
+.PHONY : TriangleRouge.cpp.s
 
 # Help Target
 help:
@@ -162,10 +314,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... TP2.5_SDLtemplate"
-	@echo "... SDLtemplate.o"
-	@echo "... SDLtemplate.i"
-	@echo "... SDLtemplate.s"
+	@echo "... TP2.5_TriangleAvecTexturesWow"
+	@echo "... TP2.5_TriangleQuiMatrix"
+	@echo "... TP2.5_TriangleQuiPlusieursTriangles"
+	@echo "... TP2.5_TriangleQuiTourne"
+	@echo "... TP2.5_TriangleRouge"
+	@echo "... TriangleAvecTexturesWow.o"
+	@echo "... TriangleAvecTexturesWow.i"
+	@echo "... TriangleAvecTexturesWow.s"
+	@echo "... TriangleQuiMatrix.o"
+	@echo "... TriangleQuiMatrix.i"
+	@echo "... TriangleQuiMatrix.s"
+	@echo "... TriangleQuiPlusieursTriangles.o"
+	@echo "... TriangleQuiPlusieursTriangles.i"
+	@echo "... TriangleQuiPlusieursTriangles.s"
+	@echo "... TriangleQuiTourne.o"
+	@echo "... TriangleQuiTourne.i"
+	@echo "... TriangleQuiTourne.s"
+	@echo "... TriangleRouge.o"
+	@echo "... TriangleRouge.i"
+	@echo "... TriangleRouge.s"
 .PHONY : help
 
 
