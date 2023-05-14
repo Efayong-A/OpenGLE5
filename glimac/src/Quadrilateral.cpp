@@ -31,6 +31,18 @@ void Quadrilateral::build(GLfloat width, GLfloat height) {
     data.push_back(vertex3);
 
     ShapeVertex vertex4;
+    vertex2.position = glm::vec3(-width/2, -height/2, 0.f);
+    vertex2.normal = glm::vec3(0.f, 0.f, 1.f);
+    vertex2.texCoords = glm::vec2(0.f, 1.f);
+    data.push_back(vertex2);
+
+    ShapeVertex vertex5;
+    vertex3.position = glm::vec3(width/2, height/2, 0.f);
+    vertex3.normal = glm::vec3(0.f, 0.f, 1.f);
+    vertex3.texCoords = glm::vec2(1.f, 1.f);
+    data.push_back(vertex3);
+
+    ShapeVertex vertex6;
     vertex4.position = glm::vec3(width/2, -height/2, 0.f);
     vertex4.normal = glm::vec3(0.f, 0.f, 1.f);
     vertex4.texCoords = glm::vec2(1.f, 0.f);
@@ -40,4 +52,4 @@ void Quadrilateral::build(GLfloat width, GLfloat height) {
     m_nVertexCount = 6;
 }
 
-} // namespace glimac
+}

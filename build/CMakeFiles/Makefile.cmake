@@ -8,13 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../TP1/CMakeLists.txt"
-  "../TP2.5/CMakeLists.txt"
-  "../TP2/CMakeLists.txt"
-  "../TP6/CMakeLists.txt"
   "../TP_Project/CMakeLists.txt"
-  "../TP_garbage/CMakeLists.txt"
-  "../TP_template/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
@@ -57,31 +51,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "glimac/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "TP1/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "TP2/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "TP2.5/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "TP6/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP_Project/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "TP_garbage/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "TP_template/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "glimac/CMakeFiles/glimac.dir/DependInfo.cmake"
-  "TP1/CMakeFiles/TP1_exo1_triangle_blanc.dir/DependInfo.cmake"
-  "TP1/CMakeFiles/TP1_exo2_triangle_couleurs.dir/DependInfo.cmake"
-  "TP1/CMakeFiles/TP1_exo3_triangle_couleurs.dir/DependInfo.cmake"
-  "TP2/CMakeFiles/TP2_exo1.dir/DependInfo.cmake"
-  "TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/DependInfo.cmake"
-  "TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/DependInfo.cmake"
-  "TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/DependInfo.cmake"
-  "TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/DependInfo.cmake"
-  "TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/DependInfo.cmake"
-  "TP6/CMakeFiles/TP6_SDLtemplate.dir/DependInfo.cmake"
-  "TP6/CMakeFiles/TP6_camera.dir/DependInfo.cmake"
-  "TP6/CMakeFiles/TP6_cameraFreefly.dir/DependInfo.cmake"
   "TP_Project/CMakeFiles/TP_Project_Project.dir/DependInfo.cmake"
-  "TP_garbage/CMakeFiles/TP_garbage_foo.dir/DependInfo.cmake"
-  "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )

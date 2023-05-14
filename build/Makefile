@@ -130,162 +130,6 @@ glimac/fast:
 .PHONY : glimac/fast
 
 #=============================================================================
-# Target rules for targets named TP1_exo1_triangle_blanc
-
-# Build rule for target.
-TP1_exo1_triangle_blanc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP1_exo1_triangle_blanc
-.PHONY : TP1_exo1_triangle_blanc
-
-# fast build rule for target.
-TP1_exo1_triangle_blanc/fast:
-	$(MAKE) $(MAKESILENT) -f TP1/CMakeFiles/TP1_exo1_triangle_blanc.dir/build.make TP1/CMakeFiles/TP1_exo1_triangle_blanc.dir/build
-.PHONY : TP1_exo1_triangle_blanc/fast
-
-#=============================================================================
-# Target rules for targets named TP1_exo2_triangle_couleurs
-
-# Build rule for target.
-TP1_exo2_triangle_couleurs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP1_exo2_triangle_couleurs
-.PHONY : TP1_exo2_triangle_couleurs
-
-# fast build rule for target.
-TP1_exo2_triangle_couleurs/fast:
-	$(MAKE) $(MAKESILENT) -f TP1/CMakeFiles/TP1_exo2_triangle_couleurs.dir/build.make TP1/CMakeFiles/TP1_exo2_triangle_couleurs.dir/build
-.PHONY : TP1_exo2_triangle_couleurs/fast
-
-#=============================================================================
-# Target rules for targets named TP1_exo3_triangle_couleurs
-
-# Build rule for target.
-TP1_exo3_triangle_couleurs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP1_exo3_triangle_couleurs
-.PHONY : TP1_exo3_triangle_couleurs
-
-# fast build rule for target.
-TP1_exo3_triangle_couleurs/fast:
-	$(MAKE) $(MAKESILENT) -f TP1/CMakeFiles/TP1_exo3_triangle_couleurs.dir/build.make TP1/CMakeFiles/TP1_exo3_triangle_couleurs.dir/build
-.PHONY : TP1_exo3_triangle_couleurs/fast
-
-#=============================================================================
-# Target rules for targets named TP2_exo1
-
-# Build rule for target.
-TP2_exo1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2_exo1
-.PHONY : TP2_exo1
-
-# fast build rule for target.
-TP2_exo1/fast:
-	$(MAKE) $(MAKESILENT) -f TP2/CMakeFiles/TP2_exo1.dir/build.make TP2/CMakeFiles/TP2_exo1.dir/build
-.PHONY : TP2_exo1/fast
-
-#=============================================================================
-# Target rules for targets named TP2.5_TriangleAvecTexturesWow
-
-# Build rule for target.
-TP2.5_TriangleAvecTexturesWow: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5_TriangleAvecTexturesWow
-.PHONY : TP2.5_TriangleAvecTexturesWow
-
-# fast build rule for target.
-TP2.5_TriangleAvecTexturesWow/fast:
-	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleAvecTexturesWow.dir/build
-.PHONY : TP2.5_TriangleAvecTexturesWow/fast
-
-#=============================================================================
-# Target rules for targets named TP2.5_TriangleQuiMatrix
-
-# Build rule for target.
-TP2.5_TriangleQuiMatrix: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5_TriangleQuiMatrix
-.PHONY : TP2.5_TriangleQuiMatrix
-
-# fast build rule for target.
-TP2.5_TriangleQuiMatrix/fast:
-	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiMatrix.dir/build
-.PHONY : TP2.5_TriangleQuiMatrix/fast
-
-#=============================================================================
-# Target rules for targets named TP2.5_TriangleQuiPlusieursTriangles
-
-# Build rule for target.
-TP2.5_TriangleQuiPlusieursTriangles: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5_TriangleQuiPlusieursTriangles
-.PHONY : TP2.5_TriangleQuiPlusieursTriangles
-
-# fast build rule for target.
-TP2.5_TriangleQuiPlusieursTriangles/fast:
-	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiPlusieursTriangles.dir/build
-.PHONY : TP2.5_TriangleQuiPlusieursTriangles/fast
-
-#=============================================================================
-# Target rules for targets named TP2.5_TriangleQuiTourne
-
-# Build rule for target.
-TP2.5_TriangleQuiTourne: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5_TriangleQuiTourne
-.PHONY : TP2.5_TriangleQuiTourne
-
-# fast build rule for target.
-TP2.5_TriangleQuiTourne/fast:
-	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleQuiTourne.dir/build
-.PHONY : TP2.5_TriangleQuiTourne/fast
-
-#=============================================================================
-# Target rules for targets named TP2.5_TriangleRouge
-
-# Build rule for target.
-TP2.5_TriangleRouge: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP2.5_TriangleRouge
-.PHONY : TP2.5_TriangleRouge
-
-# fast build rule for target.
-TP2.5_TriangleRouge/fast:
-	$(MAKE) $(MAKESILENT) -f TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build.make TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/build
-.PHONY : TP2.5_TriangleRouge/fast
-
-#=============================================================================
-# Target rules for targets named TP6_SDLtemplate
-
-# Build rule for target.
-TP6_SDLtemplate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP6_SDLtemplate
-.PHONY : TP6_SDLtemplate
-
-# fast build rule for target.
-TP6_SDLtemplate/fast:
-	$(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_SDLtemplate.dir/build.make TP6/CMakeFiles/TP6_SDLtemplate.dir/build
-.PHONY : TP6_SDLtemplate/fast
-
-#=============================================================================
-# Target rules for targets named TP6_camera
-
-# Build rule for target.
-TP6_camera: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP6_camera
-.PHONY : TP6_camera
-
-# fast build rule for target.
-TP6_camera/fast:
-	$(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_camera.dir/build.make TP6/CMakeFiles/TP6_camera.dir/build
-.PHONY : TP6_camera/fast
-
-#=============================================================================
-# Target rules for targets named TP6_cameraFreefly
-
-# Build rule for target.
-TP6_cameraFreefly: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP6_cameraFreefly
-.PHONY : TP6_cameraFreefly
-
-# fast build rule for target.
-TP6_cameraFreefly/fast:
-	$(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/build
-.PHONY : TP6_cameraFreefly/fast
-
-#=============================================================================
 # Target rules for targets named TP_Project_Project
 
 # Build rule for target.
@@ -298,32 +142,6 @@ TP_Project_Project/fast:
 	$(MAKE) $(MAKESILENT) -f TP_Project/CMakeFiles/TP_Project_Project.dir/build.make TP_Project/CMakeFiles/TP_Project_Project.dir/build
 .PHONY : TP_Project_Project/fast
 
-#=============================================================================
-# Target rules for targets named TP_garbage_foo
-
-# Build rule for target.
-TP_garbage_foo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_garbage_foo
-.PHONY : TP_garbage_foo
-
-# fast build rule for target.
-TP_garbage_foo/fast:
-	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/build
-.PHONY : TP_garbage_foo/fast
-
-#=============================================================================
-# Target rules for targets named TP_template_SDLtemplate
-
-# Build rule for target.
-TP_template_SDLtemplate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_template_SDLtemplate
-.PHONY : TP_template_SDLtemplate
-
-# fast build rule for target.
-TP_template_SDLtemplate/fast:
-	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
-.PHONY : TP_template_SDLtemplate/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -332,21 +150,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... TP1_exo1_triangle_blanc"
-	@echo "... TP1_exo2_triangle_couleurs"
-	@echo "... TP1_exo3_triangle_couleurs"
-	@echo "... TP2.5_TriangleAvecTexturesWow"
-	@echo "... TP2.5_TriangleQuiMatrix"
-	@echo "... TP2.5_TriangleQuiPlusieursTriangles"
-	@echo "... TP2.5_TriangleQuiTourne"
-	@echo "... TP2.5_TriangleRouge"
-	@echo "... TP2_exo1"
-	@echo "... TP6_SDLtemplate"
-	@echo "... TP6_camera"
-	@echo "... TP6_cameraFreefly"
 	@echo "... TP_Project_Project"
-	@echo "... TP_garbage_foo"
-	@echo "... TP_template_SDLtemplate"
 	@echo "... glimac"
 .PHONY : help
 
