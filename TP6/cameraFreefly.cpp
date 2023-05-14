@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
 
     // Load shaders and create program
     FilePath applicationPath(argv[0]);
-    Program program = loadProgram("/home/semag/Desktop/GLImac-Template/TP6/shaders/directionnallight.vs.glsl", "/home/semag/Desktop/GLImac-Template/TP6/shaders/directionallight.fs.glsl");
+    Program program = loadProgram("/home/semag/Desktop/GLImac-Template/TP6/shaders/directionnallight.vs.glsl", "/home/semag/Desktop/GLImac-Template/TP6/shaders/pointlight.fs.glsl");
     program.use();
 
     // Get uniform locations
