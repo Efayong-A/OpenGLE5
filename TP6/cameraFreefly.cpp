@@ -8,7 +8,7 @@
 #include <glimac/Program.hpp>
 #include <glimac/FilePath.hpp>
 #include <glm/gtc/random.hpp>
-#include <glimac/TrackballCamera.hpp>
+#include <glimac/FreeflyCamera.hpp>
 #include <SDL/SDL.h>
 
 using namespace glimac;
@@ -62,29 +62,35 @@ int main(int argc, char** argv) {
 
     // Load shaders and create program
     FilePath applicationPath(argv[0]);
-    Program program = loadProgram(applicationPath.dirPath() + "shaders/globes.vs.glsl", applicationPath.dirPath() + "shaders/globes.fs.glsl");
+    Program program = loadProgram("/home/semag/Desktop/GLImac-Template/TP6/shaders/directionnallight.vs.glsl", "/home/semag/Desktop/GLImac-Template/TP6/shaders/directionallight.fs.glsl");
     program.use();
 
     // Get uniform locations
     GLint uMVPMatrixLoc = glGetUniformLocation(program.getGLId(), "uMVPMatrix");
     GLint uMVMatrixLoc = glGetUniformLocation(program.getGLId(), "uMVMatrix");
     GLint uNormalMatrixLoc = glGetUniformLocation(program.getGLId(), "uNormalMatrix");
+    GLint uKdLoc = glGetUniformLocation(program.getGLId(), "uKd");
+    GLint uKsLoc = glGetUniformLocation(program.getGLId(), "uKs");
+    GLint uShininessLoc = glGetUniformLocation(program.getGLId(), "uShininess");
+    GLint uLightDirLoc = glGetUniformLocation(program.getGLId(), "uLightDir_vs");
+    GLint uLightIntensityLoc =glGetUniformLocation(program.getGLId(), "uLightIntensity");
+    // Set material properties
+    glm::vec3 kd(0.8f, 0.8f, 0.8f);
+    glm::vec3 ks(1.0f, 1.0f, 1.0f);
+    float shininess = 32.0f;
 
-    // Enable depth testing
+    // Set light properties
+    glm::vec3 lightDir(1.0f, -0.5f, -1.0f);
+    glm::vec3 lightIntensity(1.0f, 1.0f, 1.0f);
+
+    // Enable depth test
     glEnable(GL_DEPTH_TEST);
 
-    // Matrices
-    glm::mat4 ProjMatrix = glm::perspective(glm::radians(70.f), 800.f / 600.f, 0.1f, 100.f);
-
-    // Generate 32 random rotation axes for the moons
-    std::vector<glm::vec3> rotationAxes;
-    for (int i = 0; i < 32; ++i) {
-        rotationAxes.push_back(glm::sphericalRand(1.f));
-    }
-    // Trackball camera
-    TrackballCamera trackballCamera;
-    float sens = 0.8f;
+    // Freefly camera
+    FreeflyCamera freeflyCamera;
+    float sensitivity = 0.1f;
     glm::ivec2 previousMousePos(0, 0);
+
 
     // Application loop:
     bool done = false;
@@ -99,67 +105,65 @@ int main(int argc, char** argv) {
                 // Update camera rotation based on mouse movement
                 glm::ivec2 currentMousePos = windowManager.getMousePosition();
                 glm::ivec2 deltaMousePos = currentMousePos - previousMousePos;
-                trackballCamera.rotateUp(-deltaMousePos.y * sens);
-                trackballCamera.rotateLeft(-deltaMousePos.x * sens);
-
-                std::cout << "Mouse Delta: x=" << deltaMousePos.x << ", y=" << deltaMousePos.y << std::endl;
+                freeflyCamera.rotateLeft(-deltaMousePos.x * sensitivity);
+                freeflyCamera.rotateUp(-deltaMousePos.y * sensitivity);
 
                 previousMousePos = currentMousePos;
             }
-            else if (e.type == SDL_MOUSEBUTTONDOWN && (e.button.button == SDL_BUTTON_WHEELUP || e.button.button == SDL_BUTTON_WHEELDOWN)) {
-                // Update camera distance based on mouse wheel scrolling
-                float delta = 0.f;
-                if (e.button.button == SDL_BUTTON_WHEELUP) {
-                    delta = 1.f;
+            else if(!windowManager.isMouseButtonPressed(SDL_BUTTON_RIGHT)){
+                previousMousePos =windowManager.getMousePosition();
+            }
+            else if (e.type == SDL_KEYDOWN) {
+                if (windowManager.isKeyPressed(SDLK_z)) {
+                    freeflyCamera.moveFront(1.f);
                 }
-                else if (e.button.button == SDL_BUTTON_WHEELDOWN) {
-                    delta = -1.f;
+                if (windowManager.isKeyPressed(SDLK_s)) {
+                    freeflyCamera.moveFront(-1.f);
                 }
-                trackballCamera.moveFront(delta * 0.1f);
+                if (windowManager.isKeyPressed(SDLK_q)) {
+                    freeflyCamera.moveLeft(1.f);
+                }
+                if (windowManager.isKeyPressed(SDLK_d)) {
+                    freeflyCamera.moveLeft(-1.f);
+                }
             }
         }
 
-        /*********************************
-         * RENDERING CODE
-         *********************************/
-
-        // Clear color and depth buffers
+        // Clear the buffers
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // Update camera view matrix
-        glm::mat4 ViewMatrix = trackballCamera.getViewMatrix();
+        // Set the camera matrices
+        glm::mat4 projMatrix = glm::perspective(glm::radians(70.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+        glm::mat4 mvMatrix = freeflyCamera.getViewMatrix() * glm::mat4(1.0f);
+        glm::mat4 mvpMatrix = projMatrix * mvMatrix;
+        glm::mat4 normalMatrix = glm::transpose(glm::inverse(mvMatrix));
 
-        // Iterate through the rotation axes and draw the moons
-        for (int i = 0; i < 32; ++i) {
-            glm::mat4 ModelMatrix = glm::translate(glm::mat4(1.f), glm::vec3(0.f, 0.f, -5.f));
-            ModelMatrix = glm::rotate(ModelMatrix, windowManager.getTime(), rotationAxes[i]);
-            ModelMatrix = glm::translate(ModelMatrix, glm::vec3(-2.f, 0.f, 0.f));
-            ModelMatrix = glm::scale(ModelMatrix, glm::vec3(0.2f, 0.2f, 0.2f));
+        // Set uniform values
+        glUniformMatrix4fv(uMVPMatrixLoc, 1, GL_FALSE, glm::value_ptr(mvpMatrix));
+        glUniformMatrix4fv(uMVMatrixLoc, 1, GL_FALSE, glm::value_ptr(mvMatrix));
+        glUniformMatrix4fv(uNormalMatrixLoc, 1, GL_FALSE, glm::value_ptr(normalMatrix));
+        glUniform3fv(uKdLoc, 1, glm::value_ptr(kd));
+        glUniform3fv(uKsLoc, 1, glm::value_ptr(ks));
+        glUniform1f(uShininessLoc, shininess);
+        glUniform3fv(uLightDirLoc, 1, glm::value_ptr(lightDir));
+        glUniform3fv(uLightIntensityLoc, 1, glm::value_ptr(lightIntensity));
 
-            glm::mat4 MVMatrix = ViewMatrix * ModelMatrix;
+        // Bind VAO
+        glBindVertexArray(vao);
 
-            // Send matrices to the GPU
-            glUniformMatrix4fv(uMVPMatrixLoc, 1, GL_FALSE, glm::value_ptr(ProjMatrix * MVMatrix));
-            glUniformMatrix4fv(uMVMatrixLoc, 1, GL_FALSE, glm::value_ptr(MVMatrix));
-            glUniformMatrix4fv(uNormalMatrixLoc, 1, GL_FALSE, glm::value_ptr(glm::transpose(glm::inverse(MVMatrix))));
+        // Draw the sphere
+        glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
 
-            // Bind VAO
-            glBindVertexArray(vao);
+        // Unbind VAO
+        glBindVertexArray(0);
 
-            // Draw the sphere
-            glDrawArrays(GL_TRIANGLES, 0, sphere.getVertexCount());
-
-            // Unbind VAO
-            glBindVertexArray(0);
-        }
-
-        // Update the display
+        // Swap buffers
         windowManager.swapBuffers();
     }
 
-    // Delete VAO and VBO
+    // Clean up
     glDeleteBuffers(1, &vbo);
     glDeleteVertexArrays(1, &vao);
 
-    return EXIT_SUCCESS;
+    return 0;
 }

@@ -155,6 +155,7 @@ TP2.5/clean: TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/clean
 # Recursive "all" directory target.
 TP6/all: TP6/CMakeFiles/TP6_SDLtemplate.dir/all
 TP6/all: TP6/CMakeFiles/TP6_camera.dir/all
+TP6/all: TP6/CMakeFiles/TP6_cameraFreefly.dir/all
 .PHONY : TP6/all
 
 # Recursive "preinstall" directory target.
@@ -164,6 +165,7 @@ TP6/preinstall:
 # Recursive "clean" directory target.
 TP6/clean: TP6/CMakeFiles/TP6_SDLtemplate.dir/clean
 TP6/clean: TP6/CMakeFiles/TP6_camera.dir/clean
+TP6/clean: TP6/CMakeFiles/TP6_cameraFreefly.dir/clean
 .PHONY : TP6/clean
 
 #=============================================================================
@@ -218,7 +220,7 @@ glimac/clean: glimac/CMakeFiles/glimac.dir/clean
 glimac/CMakeFiles/glimac.dir/all:
 	$(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/depend
 	$(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36 "Built target glimac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38 "Built target glimac"
 .PHONY : glimac/CMakeFiles/glimac.dir/all
 
 # Build rule for subdir invocation for target.
@@ -524,13 +526,39 @@ TP6/CMakeFiles/TP6_camera.dir/clean:
 .PHONY : TP6/CMakeFiles/TP6_camera.dir/clean
 
 #=============================================================================
+# Target rules for target TP6/CMakeFiles/TP6_cameraFreefly.dir
+
+# All Build rule for target.
+TP6/CMakeFiles/TP6_cameraFreefly.dir/all: glimac/CMakeFiles/glimac.dir/all
+	$(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/depend
+	$(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=23,24 "Built target TP6_cameraFreefly"
+.PHONY : TP6/CMakeFiles/TP6_cameraFreefly.dir/all
+
+# Build rule for subdir invocation for target.
+TP6/CMakeFiles/TP6_cameraFreefly.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semag/Desktop/GLImac-Template/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP6/CMakeFiles/TP6_cameraFreefly.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/semag/Desktop/GLImac-Template/build/CMakeFiles 0
+.PHONY : TP6/CMakeFiles/TP6_cameraFreefly.dir/rule
+
+# Convenience name for target.
+TP6_cameraFreefly: TP6/CMakeFiles/TP6_cameraFreefly.dir/rule
+.PHONY : TP6_cameraFreefly
+
+# clean rule for target.
+TP6/CMakeFiles/TP6_cameraFreefly.dir/clean:
+	$(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/clean
+.PHONY : TP6/CMakeFiles/TP6_cameraFreefly.dir/clean
+
+#=============================================================================
 # Target rules for target TP_garbage/CMakeFiles/TP_garbage_foo.dir
 
 # All Build rule for target.
 TP_garbage/CMakeFiles/TP_garbage_foo.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_garbage/CMakeFiles/TP_garbage_foo.dir/build.make TP_garbage/CMakeFiles/TP_garbage_foo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=23,24 "Built target TP_garbage_foo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=25,26 "Built target TP_garbage_foo"
 .PHONY : TP_garbage/CMakeFiles/TP_garbage_foo.dir/all
 
 # Build rule for subdir invocation for target.
@@ -556,7 +584,7 @@ TP_garbage/CMakeFiles/TP_garbage_foo.dir/clean:
 TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all: glimac/CMakeFiles/glimac.dir/all
 	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build.make TP_template/CMakeFiles/TP_template_SDLtemplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=25,26 "Built target TP_template_SDLtemplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/semag/Desktop/GLImac-Template/build/CMakeFiles --progress-num=27,28 "Built target TP_template_SDLtemplate"
 .PHONY : TP_template/CMakeFiles/TP_template_SDLtemplate.dir/all
 
 # Build rule for subdir invocation for target.

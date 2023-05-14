@@ -78,6 +78,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "TP2.5/CMakeFiles/TP2.5_TriangleRouge.dir/DependInfo.cmake"
   "TP6/CMakeFiles/TP6_SDLtemplate.dir/DependInfo.cmake"
   "TP6/CMakeFiles/TP6_camera.dir/DependInfo.cmake"
+  "TP6/CMakeFiles/TP6_cameraFreefly.dir/DependInfo.cmake"
   "TP_garbage/CMakeFiles/TP_garbage_foo.dir/DependInfo.cmake"
   "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )

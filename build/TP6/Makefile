@@ -144,6 +144,20 @@ TP6_camera/fast:
 	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_camera.dir/build.make TP6/CMakeFiles/TP6_camera.dir/build
 .PHONY : TP6_camera/fast
 
+# Convenience name for target.
+TP6/CMakeFiles/TP6_cameraFreefly.dir/rule:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP6/CMakeFiles/TP6_cameraFreefly.dir/rule
+.PHONY : TP6/CMakeFiles/TP6_cameraFreefly.dir/rule
+
+# Convenience name for target.
+TP6_cameraFreefly: TP6/CMakeFiles/TP6_cameraFreefly.dir/rule
+.PHONY : TP6_cameraFreefly
+
+# fast build rule for target.
+TP6_cameraFreefly/fast:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/build
+.PHONY : TP6_cameraFreefly/fast
+
 SDLtemplate.o: SDLtemplate.cpp.o
 .PHONY : SDLtemplate.o
 
@@ -192,6 +206,30 @@ camera.cpp.s:
 	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_camera.dir/build.make TP6/CMakeFiles/TP6_camera.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+cameraFreefly.o: cameraFreefly.cpp.o
+.PHONY : cameraFreefly.o
+
+# target to build an object file
+cameraFreefly.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/cameraFreefly.cpp.o
+.PHONY : cameraFreefly.cpp.o
+
+cameraFreefly.i: cameraFreefly.cpp.i
+.PHONY : cameraFreefly.i
+
+# target to preprocess a source file
+cameraFreefly.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/cameraFreefly.cpp.i
+.PHONY : cameraFreefly.cpp.i
+
+cameraFreefly.s: cameraFreefly.cpp.s
+.PHONY : cameraFreefly.s
+
+# target to generate assembly for a file
+cameraFreefly.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f TP6/CMakeFiles/TP6_cameraFreefly.dir/build.make TP6/CMakeFiles/TP6_cameraFreefly.dir/cameraFreefly.cpp.s
+.PHONY : cameraFreefly.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TP6_SDLtemplate"
 	@echo "... TP6_camera"
+	@echo "... TP6_cameraFreefly"
 	@echo "... SDLtemplate.o"
 	@echo "... SDLtemplate.i"
 	@echo "... SDLtemplate.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
+	@echo "... cameraFreefly.o"
+	@echo "... cameraFreefly.i"
+	@echo "... cameraFreefly.s"
 .PHONY : help
 
 

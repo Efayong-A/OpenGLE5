@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
 
     // Load shaders and create program
     FilePath applicationPath(argv[0]);
-    Program program = loadProgram(applicationPath.dirPath() + "shaders/globes.vs.glsl", applicationPath.dirPath() + "shaders/globes.fs.glsl");
+    Program program = loadProgram(applicationPath.dirPath() + "shaders/directionallight.vs.glsl", applicationPath.dirPath() + "shaders/directionallight.fs.glsl");
     program.use();
 
     // Get uniform locations
