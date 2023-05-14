@@ -49,6 +49,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/semag/Desktop/GLImac-Template/build/TP2/cmake_install.cmake")
   include("/home/semag/Desktop/GLImac-Template/build/TP2.5/cmake_install.cmake")
   include("/home/semag/Desktop/GLImac-Template/build/TP6/cmake_install.cmake")
+  include("/home/semag/Desktop/GLImac-Template/build/TP_Project/cmake_install.cmake")
   include("/home/semag/Desktop/GLImac-Template/build/TP_garbage/cmake_install.cmake")
   include("/home/semag/Desktop/GLImac-Template/build/TP_template/cmake_install.cmake")
 

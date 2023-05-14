@@ -286,6 +286,19 @@ TP6_cameraFreefly/fast:
 .PHONY : TP6_cameraFreefly/fast
 
 #=============================================================================
+# Target rules for targets named TP_Project_Project
+
+# Build rule for target.
+TP_Project_Project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TP_Project_Project
+.PHONY : TP_Project_Project
+
+# fast build rule for target.
+TP_Project_Project/fast:
+	$(MAKE) $(MAKESILENT) -f TP_Project/CMakeFiles/TP_Project_Project.dir/build.make TP_Project/CMakeFiles/TP_Project_Project.dir/build
+.PHONY : TP_Project_Project/fast
+
+#=============================================================================
 # Target rules for targets named TP_garbage_foo
 
 # Build rule for target.
@@ -331,6 +344,7 @@ help:
 	@echo "... TP6_SDLtemplate"
 	@echo "... TP6_camera"
 	@echo "... TP6_cameraFreefly"
+	@echo "... TP_Project_Project"
 	@echo "... TP_garbage_foo"
 	@echo "... TP_template_SDLtemplate"
 	@echo "... glimac"

@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/semag/Desktop/GLImac-Template/glimac/src/Geometry.cpp" "glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Geometry.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Image.cpp" "glimac/CMakeFiles/glimac.dir/src/Image.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Image.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Program.cpp" "glimac/CMakeFiles/glimac.dir/src/Program.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Program.cpp.o.d"
+  "/home/semag/Desktop/GLImac-Template/glimac/src/Quadrilateral.cpp" "glimac/CMakeFiles/glimac.dir/src/Quadrilateral.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Quadrilateral.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/SDLWindowManager.cpp" "glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Shader.cpp" "glimac/CMakeFiles/glimac.dir/src/Shader.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Shader.cpp.o.d"
   "/home/semag/Desktop/GLImac-Template/glimac/src/Sphere.cpp" "glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.o" "gcc" "glimac/CMakeFiles/glimac.dir/src/Sphere.cpp.o.d"

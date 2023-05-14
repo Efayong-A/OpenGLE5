@@ -23,6 +23,9 @@
 /home/semag/Desktop/GLImac-Template/build/TP6/CMakeFiles/TP6_cameraFreefly.dir
 /home/semag/Desktop/GLImac-Template/build/TP6/CMakeFiles/edit_cache.dir
 /home/semag/Desktop/GLImac-Template/build/TP6/CMakeFiles/rebuild_cache.dir
+/home/semag/Desktop/GLImac-Template/build/TP_Project/CMakeFiles/TP_Project_Project.dir
+/home/semag/Desktop/GLImac-Template/build/TP_Project/CMakeFiles/edit_cache.dir
+/home/semag/Desktop/GLImac-Template/build/TP_Project/CMakeFiles/rebuild_cache.dir
 /home/semag/Desktop/GLImac-Template/build/TP_garbage/CMakeFiles/TP_garbage_foo.dir
 /home/semag/Desktop/GLImac-Template/build/TP_garbage/CMakeFiles/edit_cache.dir
 /home/semag/Desktop/GLImac-Template/build/TP_garbage/CMakeFiles/rebuild_cache.dir

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/glimac.dir/src/Image.cpp.o.d"
   "CMakeFiles/glimac.dir/src/Program.cpp.o"
   "CMakeFiles/glimac.dir/src/Program.cpp.o.d"
+  "CMakeFiles/glimac.dir/src/Quadrilateral.cpp.o"
+  "CMakeFiles/glimac.dir/src/Quadrilateral.cpp.o.d"
   "CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o"
   "CMakeFiles/glimac.dir/src/SDLWindowManager.cpp.o.d"
   "CMakeFiles/glimac.dir/src/Shader.cpp.o"

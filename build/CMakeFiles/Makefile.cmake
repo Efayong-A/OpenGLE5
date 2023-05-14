@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../TP2.5/CMakeLists.txt"
   "../TP2/CMakeLists.txt"
   "../TP6/CMakeLists.txt"
+  "../TP_Project/CMakeLists.txt"
   "../TP_garbage/CMakeLists.txt"
   "../TP_template/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
@@ -60,6 +61,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "TP2/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP2.5/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP6/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "TP_Project/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP_garbage/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TP_template/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -79,6 +81,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "TP6/CMakeFiles/TP6_SDLtemplate.dir/DependInfo.cmake"
   "TP6/CMakeFiles/TP6_camera.dir/DependInfo.cmake"
   "TP6/CMakeFiles/TP6_cameraFreefly.dir/DependInfo.cmake"
+  "TP_Project/CMakeFiles/TP_Project_Project.dir/DependInfo.cmake"
   "TP_garbage/CMakeFiles/TP_garbage_foo.dir/DependInfo.cmake"
   "TP_template/CMakeFiles/TP_template_SDLtemplate.dir/DependInfo.cmake"
   )

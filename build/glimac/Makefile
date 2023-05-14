@@ -250,6 +250,30 @@ src/Program.cpp.s:
 	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Program.cpp.s
 .PHONY : src/Program.cpp.s
 
+src/Quadrilateral.o: src/Quadrilateral.cpp.o
+.PHONY : src/Quadrilateral.o
+
+# target to build an object file
+src/Quadrilateral.cpp.o:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Quadrilateral.cpp.o
+.PHONY : src/Quadrilateral.cpp.o
+
+src/Quadrilateral.i: src/Quadrilateral.cpp.i
+.PHONY : src/Quadrilateral.i
+
+# target to preprocess a source file
+src/Quadrilateral.cpp.i:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Quadrilateral.cpp.i
+.PHONY : src/Quadrilateral.cpp.i
+
+src/Quadrilateral.s: src/Quadrilateral.cpp.s
+.PHONY : src/Quadrilateral.s
+
+# target to generate assembly for a file
+src/Quadrilateral.cpp.s:
+	cd /home/semag/Desktop/GLImac-Template/build && $(MAKE) $(MAKESILENT) -f glimac/CMakeFiles/glimac.dir/build.make glimac/CMakeFiles/glimac.dir/src/Quadrilateral.cpp.s
+.PHONY : src/Quadrilateral.cpp.s
+
 src/SDLWindowManager.o: src/SDLWindowManager.cpp.o
 .PHONY : src/SDLWindowManager.o
 
@@ -370,6 +394,9 @@ help:
 	@echo "... src/Program.o"
 	@echo "... src/Program.i"
 	@echo "... src/Program.s"
+	@echo "... src/Quadrilateral.o"
+	@echo "... src/Quadrilateral.i"
+	@echo "... src/Quadrilateral.s"
 	@echo "... src/SDLWindowManager.o"
 	@echo "... src/SDLWindowManager.i"
 	@echo "... src/SDLWindowManager.s"
